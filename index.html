@@ -6,120 +6,211 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Кав'ярня Мері</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,900;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <a href="#">
-        <img src="./images/logo.svg" alt="Логотип Кав'ярні Мері" />
-      </a>
-      <ul>
-        <li><a href="#">Франшиза</a></li>
-        <li><a href="#">Наші традицій</a></li>
-        <li><a href="#">Формати</a></li>
-        <li><a href="#">Контакти</a></li>
-      </ul>
-    </nav>
-    <button type="button">замовити дзвінок</button>
+    <div class="conteiner">
+      <div class="heder-conteiner">
+        <nav class="heder-nav">
+          <a href="/">
+            <img src="./images/logo.svg" alt="Логотип Кав'ярні Мері" /> </a>
+          <ul class="heder-menu">
+            <li><a class="link" href="#tradition-section">Наші традиції</a></li>
+            <li><a class="link" href="#cookers">Шеф-кухарі</a></li>
+            <li><a class="link" href="#formats">Формати</a></li>
+            <li><a class="link" href="#contact">Контакти</a></li>
+          </ul>
+        </nav>
+        <button class="button" type="button">замовити дзвінок</button>
+      </div>
+    </div>
   </header>
   <main>
-    <section>
-      <h1>Кав'ярня Мері</h1>
+    <section class="hero-section">
+
+      <div class="conteiner">
+        <h1 class="hero-title"> <span class="accent">Кав'ярня</span> Мері</h1>
+      </div>
     </section>
-    <section>
-      <ul>
-        <li>Великий попит на ринку</li>
-        <li>Доступні за бюдретом формати</li>
-        <li>Досвітчена управлінська команда</li>
-      </ul>
-      <h2>Новий формат традицій</h2>
-      <p>
-        <span>Shop bakery & COFEE</span> це кав'ярня що взяла найкраще із
-        української смачної випічки та додала найкращу каву світу!
-      </p>
-      <p>
-        Ми працюємо <span> краще за найкраші</span> кав'ярні світу.
-        <span>Додаємо мамину любов,</span> відчуття затишку та безтурботності
-      </p>
-      <img src="./images/image 1560.jpg" alt="Пекарь везе тацю з багетами до вітрини з випічкою">
+    <div class="conteiner">
+      <section class="adventadges-section">
+        <h2 class="visually-hidden">Наші переваги</h2>
+        <ul class="adventadges-list">
+          <li class="adventadges-items">Великий попит на ринку</li>
+          <li class="adventadges-items">Доступні за бюджетом формати</li>
+          <li class="adventadges-items">Досвітчена управлінська команда</li>
+        </ul>
+    </div>
     </section>
-    <section>
-      <h2>Наші золоті шеф-кухарі</h2>
-      <ul>
-        <li>
-          <article>
-            <h3>Мері</h3>
-            <p>Доброго вечора - ми з України ;)</p>
-            <p>Вже понад 15 років я випікаю за старовинними рецептами</p>
-            <p>Я та, що подарує вам мамину любов та смак бабиної випічки</p>
-            <img src="./images/image 1561.jpg" alt="Дівчина з посмішкою тримає запашну випічку на білосніжній тарілці">
-          </article>
-        </li>
-        <li>
-          <article>
-            <h3>Тімотеус</h3>
-            <p>Бадьорість - починається з мене</p>
-            <p>Духмяна, запашна, зігріваюча насолода</p>
-            <p>Я заварювам так, як коханці не варять у ранці</p>
-            <img src="./images/image 1562.jpg" alt="хлопець у поварському вбранні формує тісто">
-          </article>
-        </li>
-      </ul>
+    <section class="tradition-section section" id="tradition-section">
+      <div class="conteiner">
+
+        <div class="tradition-conteiner">
+          <div class="tradition-content">
+            <h2 class="tradition-title section-title">Наші традицій</h2>
+            <p class="tradition-text">
+              <span class="brand uppercase">Shop bakery & COFEE</span> це кав'ярня що взяла найкраще із
+              української смачної випічки та додала найкращу каву світу!
+            </p>
+            <p class="tradition-text limited"> Ми працюємо <span class="brand"> краще за найкраші</span> кав'ярні
+              світу.<span class="brand"> Додаємо
+                мамину любов,</span> відчуття затишку та безтурботності
+            </p>
+          </div>
+          <img src="./images/image1560.jpg" alt="Пекарь везе тацю з багетами до вітрини з випічкою">
+        </div>
+      </div>
     </section>
-    <h2>Формати</h2>
-    <ul>
-      <li>
-        <article>
-          <h3>На віранді</h3>
-        </article>
-      </li>
-      <li>
-        <article>
-          <h3>Ліс</h3>
-        </article>
-      </li>
-      <li>
-        <article>
-          <h3>Прованс</h3>
-        </article>
-      </li>
-    </ul>
-    <section>
-      <h2>Приєднуйся до мережі кав'ярень</h2>
+    <section class="section" id="cookers">
+      <div class="conteiner">
+        <h2 class="chefs-title section-title centered">Наші золоті <span class="accent">шеф-кухарі</span></h2>
+        <ul class="chefs-list">
+          <li class="chefs-item">
+            <article class="chef-card">
+              <img class="chef-images" src="./images/image1561.jpg"
+                alt="Дівчина з посмішкою тримає запашну випічку на білосніжній тарілці">
+              <div>
+                <h3 class="chef-title">Мері</h3>
+                <p class="chef-text">Доброго вечора - ми з України</p>
+                <p class="chef-text">Вже понад 15 років я випікаю <br> за старовинними рецептами</p>
+                <p class="chef-text">Я та, що подарує вам мамину <br> любов та смак бабиної випічки</p>
+              </div>
+            </article>
+          </li>
+          <li class="chefs-item">
+            <article class="chef-card">
+              <img class="chef-images" src="./images/image1562.jpg" alt="хлопець у поварському вбранні формує тісто">
+              <div>
+                <h3 class="chef-title">Тімотеус</h3>
+                <p class="chef-text">Бадьорість - починається з мене</p>
+                <p class="chef-text">Духмяна... запашна... зігріваюча насолода</p>
+                <p class="chef-text">Я заварю Вам, як коханці - не заварять ранці!</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <section class="section" id="formats">
+
+      <div class="conteiner">
+        <h2 class="formats-title section-title centered">Формати</h2>
+
+        <div class="formats-conteiner">
+          <button class="carousel-button" type="button">
+            <svg width="16px" height="16px">
+              <use href="./images/icons.svg#icon-Arrow-icon"> </use>
+            </svg>
+          </button>
+          <ul class="format-list">
+            <li>
+              <article class="format-card">
+                <h3 class="format-title">На віранді</h3>
+                <div class="format-text">
+                  <p>Площа: до 120 м2 Меню: розширене меню</p>
+                  <p>Штат: 2 продавці-касири, 2 пекарі,<br> 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                  <p>Посадкові місця: є</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="format-card">
+                <h3 class="format-title">Ліс</h3>
+                <div class="format-text">
+                  <p>Площа: до 25 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 2 продавці-касири, 2 пекарі, <br> 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="format-card">
+                <h3 class="format-title">Прованс</h3>
+                <div class="format-text">
+                  <p>Площа: до 15 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 1 продавець, 1 пекар, <br> 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button class="carousel-button" type="button">
+            <svg width="16px" height="16px">
+              <use href="./images/icons.svg#icon-Arrow-icon"> </use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-title section" id="contact">
+      <div class="conteiner">
+        <div class="contact-conteiner">
+          <div class="contact-form"></div>
+          <h2 class="section-title">Приєднуйся до мережі кав'ярень</h2>
+          <p>Заповни форму щоб ми зв'язались з тобою!</p>
+          <!-- form-->
+        </div>
+      </div>
+      <iframe class="contact-map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2643.8980464784!2d35.19285227588216!3d48.49684697128536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d95707d763b02f%3A0x4ee49bed706615e0!2z0YPQuy4g0JDQutCw0LTQtdC80LjQutCwINCa0L7RgNC-0LvRkdCy0LAsIDM3LCDQlNC90LXQv9GALCDQlNC90LXQv9GA0L7Qv9C10YLRgNC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDQuNC90LAsIDQ5MDAw!5e0!3m2!1sru!2sde!4v1681829237364!5m2!1sru!2sde"
+        width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </div>
     </section>
   </main>
-  <footer>
-    <nav>
-      <a href="#">
-        <img src="./images/logo.svg" alt="Логотип Кав'ярні Мері" />
-      </a>
-      <ul>
-        <li><a href="#">Франшиза</a></li>
-        <li><a href="#">Наші традицій</a></li>
-        <li><a href="#">Формати</a></li>
-        <li><a href="#">Контакти</a></li>
-      </ul>
-    </nav>
-    <address>
-      <ul>
-        <li><a href="tel:+380630000000">+38063-000-00-00</a></li>
-        <li>
-          <a href="mailto:bekery&cofy@gmail.com">bekery&cofy@gmail.com</a>
-        </li>
-        <li>
-          <a href="https://go.2gis.com/srlaz" target="_blank">Україна м.Дніпро вул.Корольова 37</a>
-        </li>
-        <li><a href="">
-            <!--facebooke icon-->
-          </a></li>
-        <li><a href="">
-            <!-- instagam icon-->
-          </a></li>
-      </ul>
-      <a href="#" target="_blank">Політика конфіденційності</a>
-      <p> 2022 всі права захищені</p>
-    </address>
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="conteiner">
+      <nav>
+        <a href="#">
+          <img src="./images/logo.svg" alt="Логотип Кав'ярні Мері" />
+        </a>
+        <ul>
+          <li><a class="link" href="#tradition-section">Наші традиції</a></li>
+          <li><a class="link" href="#cookers">Шеф-кухарі</a></li>
+          <li><a class="link" href="#formats">Формати</a></li>
+          <li><a class="link" href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
+      <address>
+        <ul>
+          <li><a class="adress-link" href="tel:+380630000000">+38063-000-00-00</a></li>
+          <li><a class="adress-link" href="mailto:bekery&cofy@gmail.com">bekery&cofy@gmail.com</a>
+          </li>
+          <li><a class="adress-link" href="https://go.2gis.com/srlaz" target="_blank">Україна м.Дніпро вул.Корольова
+              37</a>
+          </li>
+          <li><a href="#">
+              <svg class="adress-icon" width="32px" height="32px">
+                <use href="./images/icons.svg#icon-facebook-icon"> </use>
+              </svg>
+            </a></li>
+          <li><a href="#">
+              <svg class="adress-icon" width="32px" height="32px">
+                <use href="./images/icons.svg#icon-instagram-icon"> </use>
+              </svg>
+            </a></li>
+        </ul>
+        <a class="adress-link" href="#" target="_blank">Політика конфіденційності</a>
+        <p class="adress-copyrighte"> &copy; 2022 всі права захищені</p>
+      </address>
+    </div>
   </footer>
 </body>
 
